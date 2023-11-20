@@ -10,6 +10,7 @@ export const registerUserValidation = z.object({
     .max(100, { message: "fullname should not be longer than 100 characters" }),
   password: z
     .string({ required_error: "password is required" })
+    .min(6, { message: "password must be at least 6 characters" })
     .max(100, { message: "password should not be longer than 100 characters" }),
   gender: z.enum(["male", "female"], {
     required_error: "gender is required",

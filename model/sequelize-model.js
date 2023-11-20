@@ -25,7 +25,7 @@ export const user = sequelize.define(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [6, 10],
+        len: [6, 255],
       },
     },
     gender: {
