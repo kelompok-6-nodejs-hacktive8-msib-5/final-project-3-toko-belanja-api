@@ -1,8 +1,8 @@
 # Live Demo
 
-https://final-project-3-toko-belanja-api-dev-nzke.1.sg-1.fl0.io
+https://final-project-3-toko-belanja-api-dev-mzca.1.sg-1.fl0.io
 
-[Documentation](https://final-project-3-toko-belanja-api-dev-nzke.1.sg-1.fl0.io/api)
+[Documentation](https://final-project-3-toko-belanja-api-dev-mzca.1.sg-1.fl0.io/api)
 
 deploy backend from https://www.fl0.com/
 

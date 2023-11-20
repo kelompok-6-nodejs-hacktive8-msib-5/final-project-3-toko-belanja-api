@@ -8,7 +8,7 @@ export const tokoBelanjaDocs = {
   },
   servers: [
     {
-      url: "",
+      url: "https://final-project-3-toko-belanja-api-dev-mzca.1.sg-1.fl0.io",
       description: "Toko Belanja RESTful API server",
     },
   ],
