@@ -1,5 +1,8 @@
 import { DataTypes } from "sequelize";
 import { sequelize } from "../sequelize/sequelize-config.js";
+import moment from "moment-timezone";
+
+moment.tz.setDefault("Asia/Jakarta");
 
 export const user = sequelize.define(
   "User",
