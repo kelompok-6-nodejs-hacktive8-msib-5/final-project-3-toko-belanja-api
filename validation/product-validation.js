@@ -9,13 +9,14 @@ export const createProductValidation = z.object({
       required_error: "price is required",
       invalid_type_error: "price must be number",
     })
-    .min(0, { message: "price not less than 0" }),
+    .min(0, { message: "price not less than 0" })
+    .max(50000000, { message: "price no more than 50000000" }),
   stock: z
     .number({
       required_error: "stock is required",
       invalid_type_error: "stock must be number",
     })
-    .min(0, { message: "stock not less than 0" }),
+    .min(5, { message: "stock not less than 5" }),
   CategoryId: z.number({
     required_error: "CategoryId is required",
     invalid_type_error: "CategoryId must be number",

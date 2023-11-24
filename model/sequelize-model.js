@@ -93,6 +93,7 @@ export const product = sequelize.define("Product", {
     validate: {
       isNumeric: true,
       isInt: true,
+      min: 5,
     },
   },
   createdAt: DataTypes.DATE,
