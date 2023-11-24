@@ -27,6 +27,7 @@ export const register = async (request) => {
     throw new ResponseError(409, "Email already registered");
   }
 
+  user.role = "customer";
   user.balance = 0;
 
   const hashedPassword = await bcrypt.hash(password, 10);
