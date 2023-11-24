@@ -15,11 +15,7 @@ import { formatWaktu } from "../utils/waktu-format.js";
 export const register = async (request) => {
   const user = validate(registerUserValidation, request);
 
-  const { email, password, role } = user;
-
-  if (!role) {
-    user.role = "customer";
-  }
+  const { email, password } = user;
 
   const isUserExist = await userModel.count({
     where: {
