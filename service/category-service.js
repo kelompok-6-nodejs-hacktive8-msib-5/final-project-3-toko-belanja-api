@@ -87,7 +87,7 @@ export const getCategory = async (user) => {
         sold_product_amount,
         createdAt: formattedCreatedAt,
         updatedAt: formattedUpdatedAt,
-        products: mappedProducts,
+        Products: mappedProducts,
       };
     }
   );
