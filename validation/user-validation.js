@@ -16,7 +16,6 @@ export const registerUserValidation = z.object({
     required_error: "gender is required",
     invalid_type_error: "gender must be male or female",
   }),
-  role: z.string().optional(),
 });
 
 export const loginUserValidation = z.object({

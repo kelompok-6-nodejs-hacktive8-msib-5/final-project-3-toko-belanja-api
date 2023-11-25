@@ -15,7 +15,7 @@ import { formatWaktu } from "../utils/waktu-format.js";
 export const register = async (request) => {
   const user = validate(registerUserValidation, request);
 
-  const { email, password, role } = user;
+  const { email, password } = user;
 
   const isUserExist = await userModel.count({
     where: {
@@ -27,6 +27,7 @@ export const register = async (request) => {
     throw new ResponseError(409, "Email already registered");
   }
 
+  user.role = "customer";
   user.balance = 0;
 
   const hashedPassword = await bcrypt.hash(password, 10);
