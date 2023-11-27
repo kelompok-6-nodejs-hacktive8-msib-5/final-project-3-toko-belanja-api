@@ -53,12 +53,7 @@ export const createProduct = async (user, request) => {
   };
 };
 
-export const getProduct = async (user) => {
-  const { role } = user;
-
-  if (role !== "admin") {
-    throw new ResponseError(401, "Unathorized, only admin can access");
-  }
+export const getProduct = async () => {
   const product = await productModel.findAll();
 
   const mappedProducts = product.map((product) => {

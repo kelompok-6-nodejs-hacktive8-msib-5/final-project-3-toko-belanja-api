@@ -21,9 +21,7 @@ export const createProductController = async (req, res, next) => {
 
 export const getProductController = async (req, res, next) => {
   try {
-    const user = req.user;
-
-    const result = await getProduct(user);
+    const result = await getProduct();
 
     res.status(200).send(result);
   } catch (e) {
